@@ -1,0 +1,82 @@
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Sección superior: fondo oscuro y texto blanco */
+  .top-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .top-section h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .top-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Contenido de "Nosotros" */
+  .nosotros-content {
+    padding: 4rem 2rem;
+  }
+  
+  .nosotros-content h2 {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1.5rem;
+  }
+  
+  .nosotros-content p {
+    text-align: justify;
+    line-height: 1.8;
+  }
+  
+  /* Sección del equipo */
+  .equipo-section {
+    background-color: #fff;
+    padding: 4rem 2rem;
+  }
+  
+  .equipo-section h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Miembro del equipo */
+  .miembro {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .miembro img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #000;
+  }
+  
+  .miembro h5 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .miembro p {
+    font-style: italic;
+    color: #666;
+  }
+  

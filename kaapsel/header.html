@@ -1,0 +1,61 @@
+<!-- HEADER -->
+<style>
+  .top-header {
+    background-color: #000000cc;
+    padding: 10px 30px;
+  }
+
+  .logo-redondo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+
+  .search-bar input {
+    border-radius: 20px;
+    padding-left: 15px;
+  }
+
+  .menu {
+    background-color: #000000cc;
+  }
+
+  .nav-link {
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .nav-link:hover {
+    color: #cccccc !important;
+  }
+</style>
+
+<header>
+  <!-- Parte superior -->
+  <div class="top-header d-flex justify-content-between align-items-center">
+    <div class="logo d-flex align-items-center">
+      <a href="index.php">
+        <img src="logo.jpg" alt="Logo" class="logo-redondo me-3">
+      </a>
+    </div>
+    <div class="search-bar w-50 mx-auto">
+      <input type="text" class="form-control" placeholder="Buscar...">
+    </div>
+    <div></div>
+  </div>
+
+  <!-- Menú -->
+  <nav class="menu navbar navbar-expand-lg navbar-dark">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-row gap-4">
+        <li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="eventos.php">Eventos</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.php">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="novedades.php">Novedades</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

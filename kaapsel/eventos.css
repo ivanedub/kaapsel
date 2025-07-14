@@ -1,0 +1,286 @@
+/* eventos.css */
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* --- Carousel personalizado --- */
+  .custom-carousel {
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.2);
+  }
+  
+  .custom-carousel img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-carousel img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* --- Perfiles del equipo --- */
+  .container .row > div {
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    cursor: default;
+  }
+  
+  .container .row > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+    border-radius: 12px;
+    background-color: #f9f9f9;
+  }
+  
+  h5 {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* --- Banners de mensajes --- */
+  .banner-text {
+    background: #92959800; 
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 4rem;
+    user-select: none;
+    text-transform: uppercase;
+  }
+  
+  .mensaje-secundario {
+    text-align: center;
+    max-width: 700px;
+    margin: 15px auto 40px;
+    font-size: 1.15rem;
+    color: #444;
+    font-weight: 500;
+    padding: 0 15px;
+  }
+  
+  /* --- Grid para eventos destacados --- */
+  .eventos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+    padding-bottom: 40px;
+  }
+  
+  .evento-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .evento-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgb(0 0 0 / 0.15);
+  }
+  
+  .placeholder-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .evento-descripcion {
+    padding: 15px 20px;
+  }
+  
+  .evento-descripcion h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #92959800;
+    font-weight: 700;
+  }
+  
+  .evento-descripcion p {
+    color: #555;
+    margin-bottom: 12px;
+    font-size: 1rem;
+  }
+  
+  .evento-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: #92959800;
+    transition: color 0.3s ease;
+  }
+  
+  .evento-link:hover {
+    color: #92959800;
+    text-decoration: underline;
+  }
+  
+  /* --- Próximos eventos --- */
+  .eventos-grandes {
+    margin-bottom: 60px;
+  }
+  
+  .eventos-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .evento-box {
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 0.12);
+    max-width: 320px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .evento-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgb(0 0 0 / 0.18);
+  }
+  
+  .evento-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .info-evento {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .info-evento h3 {
+    margin-bottom: 12px;
+    color: #92959800;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .info-evento p {
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .btn-entrada {
+    background-color: #92959800;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-entrada:hover {
+    background-color: #8b1a1a;
+  }
+  
+  /* --- Formulario de registro --- */
+  .registro-formulario {
+    max-width: 700px;
+    margin-bottom: 60px;
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgb(0 0 0 / 0.12);
+  }
+  
+  .registro-formulario h2 {
+    color: #92959800;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #92959800;
+    box-shadow: 0 0 5px rgba(178, 34, 34, 0.5);
+  }
+  
+  .btn-enviar {
+    background-color: #92959800;
+    color: #fff;
+    font-weight: 700;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-enviar:hover {
+    background-color: #92959800;
+  }
+  
+  /* --- Responsive --- */
+  @media (max-width: 576px) {
+    .custom-carousel img {
+      height: 300px;
+    }
+    .evento-box img {
+      height: 150px;
+    }
+    .registro-formulario {
+      padding: 20px 15px;
+    }
+  }
+  
